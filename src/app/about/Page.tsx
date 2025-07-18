@@ -1,18 +1,19 @@
+// src/app/about/page.tsx
+
+'use client';
+
 import React from 'react';
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen py-16 px-4 bg-white">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-teal-600 mb-6">About Us</h1>
-        <p className="text-lg text-gray-700 mb-4">
-          Welcome to our website! We are passionate about providing quality services that meet the needs of our customers.
-        </p>
-        <p className="text-gray-600">
-          Our team is dedicated to innovation, integrity, and excellence. We believe in building long-term relationships with our clients
-          and ensuring that every project is a success.
+    <section className="py-20 px-6 bg-white text-gray-800">
+      <div className="max-w-4xl mx-auto text-center">
+        <h1 className="text-4xl font-bold mb-6">About Us</h1>
+        <p className="text-lg">
+          We are a team dedicated to connecting skilled professionals with businesses that need them.
+          Our mission is to bridge the gap between talent and opportunity with integrity and excellence.
         </p>
       </div>
-    </div>
+    </section>
   );
 }
