@@ -1,15 +1,22 @@
-// src/components/Navbar.tsx
-export default function Navbar() {
+'use client';
+
+import Link from 'next/link';
+import React from 'react';
+
+const Navbar = () => {
   return (
-    <nav className="bg-white shadow">
-      <div className="container mx-auto px-4 py-3 flex justify-between">
-        <h1 className="font-bold text-xl">Manpower Services</h1>
-        <ul className="flex gap-4">
-          <li><a href="services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+    <nav className="bg-teal-600 text-white p-4 shadow-md">
+      <div className="container mx-auto flex justify-between">
+        <h1 className="font-bold text-xl">MyWebsite</h1>
+        <ul className="flex gap-6">
+          <li><Link href="/">Home</Link></li>
+          <li><Link href="/about">About</Link></li>
+          <li><Link href="/services">Services</Link></li>
+          <li><Link href="/contact">Contact</Link></li>
         </ul>
       </div>
     </nav>
   );
-}
+};
+
+export default Navbar;
