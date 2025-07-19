@@ -10,13 +10,21 @@ const Navbar = () => {
         <h1 className="font-bold text-xl">MyWebsite</h1>
         <ul className="flex gap-6">
           <li><Link href="/">Home</Link></li>
-          <li><Link href="/about">About</Link></li>
+          <Link href="/about">About</Link>
           <li><Link href="/services">Services</Link></li>
           <li><Link href="/contact">Contact</Link></li>
         </ul>
       </div>
     </nav>
   );
+  
+return (
+  <>
+    <Navbar />
+    <main>...</main>
+  </>
+);
+
 };
 
 export default Navbar;
